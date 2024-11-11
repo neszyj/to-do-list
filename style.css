@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #7a3c8d;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #7a3c8d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #9c4fa7;
+  }
+  
+  .lists-container {
+    margin-top: 20px;
+  }
+  
+  .list {
+    background-color: #f5e0f0;
+    border: 1px solid #e5b3e1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .list h3 {
+    margin: 0;
+    color: #7a3c8d;
+  }
+  
+  .list button {
+    background-color: #e74c3c;
+    margin-left: 10px;
+  }
+  
+  .list button:hover {
+    background-color: #c0392b;
+  }
+  
+  .task {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+    background-color: #dcdcdc;
+  }
+  
+  .task button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .task button:hover {
+    background-color: #2980b9;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    input[type="text"] {
+      width: 60%;
+    }
+  
+    button {
+      padding: 8px 15px;
+    }
+  }
+  
